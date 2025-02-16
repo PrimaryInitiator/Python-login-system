@@ -7,9 +7,9 @@ loginDB = [
     ]
 
 commentsDB = [
-    ["Welcome to the Forum! Please be Kind and Civil", "- The Owner"]
+    ["Welcome to the Forum! Please be Kind and Civil", "-", "The Owner"]
 
-]
+    ]
 
 
 def login():
@@ -72,7 +72,7 @@ def AdminPermissionsCheck():
         return False
             
 def viewComments():    
-    formatted_comments = [f'"{comment[0]}" by {comment[1]}' for comment in commentsDB]
+    formatted_comments = [f'"{comment[0]}" by {comment[2]}' for comment in commentsDB]
     print(", ".join(formatted_comments))
 
 
